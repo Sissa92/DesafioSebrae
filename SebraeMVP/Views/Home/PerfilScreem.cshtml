@@ -1,0 +1,90 @@
+﻿<style>
+
+    @@font-face {
+        font-family: AvenirLTStd-Book;
+        src: url('../../fonts/AvenirLTStd-Book.otf') format('opentype') ;
+        
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Medium;
+        src: url('../../fonts/AvenirLTStd-Medium.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Roman;
+        src: url('../../fonts/AvenirLTStd-Roman.otf') format('opentype');
+    }
+
+    body {
+        background: rgb(6,170,169);
+        background: linear-gradient(330deg, rgba(6,170,169,1) 0%, rgba(96,220,140,1) 100%);
+    }
+
+    .form-center {
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .titulo {
+        padding-top: 10%;
+        font-family: 'AvenirLTStd-Medium';
+        font-weight: 100;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .subtitulo {
+        color: white;
+        font-family: 'AvenirLTStd-Roman';
+        font-size: 2rem;
+    }
+
+    a:hover{
+        color:aqua !important;
+    }
+
+    .acoes {
+        padding-top: 3rem;
+    }
+
+</style>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+</head>
+
+<body>
+
+    <form class="form-center">
+        <center>
+            <h1 class="titulo">Olá, </h1>
+            <p style="padding-top:2%" class="subtitulo">nós conectamos<br />prestadores de serviços<br /> a fornecedores<br /> E você?</p>
+        </center>
+        <div class="acoes">
+            <hr>
+            <div>
+                <a href="~/Home/CadastroScreem" class="subtitulo">
+                    - Eu presto serviços<i style="float: right;padding-top: 1%" class="fa fa-chevron-circle-right"></i>
+                </a>
+            </div>
+            <hr>
+            <div>
+                <a href="~/Home/CadastroScreem" class="subtitulo">
+                    - Eu forneço produtos<i style="float: right;padding-top: 1%" class="fa fa-chevron-circle-right"></i>
+                </a>
+            </div>
+            <hr>
+        </div>
+    </form>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+

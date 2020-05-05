@@ -1,0 +1,226 @@
+﻿<style>
+
+    @@font-face {
+        font-family: AvenirLTStd-Book;
+        src: url('../../fonts/AvenirLTStd-Book.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Medium;
+        src: url('../../fonts/AvenirLTStd-Medium.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Roman;
+        src: url('../../fonts/AvenirLTStd-Roman.otf') format('opentype');
+    }
+
+    body {
+        background: rgb(6,170,169);
+        background: linear-gradient(330deg, rgba(6,170,169,1) 0%, rgba(96,220,140,1) 100%);
+    }
+
+    .form-center {
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .titulo {
+        padding-top: 10%;
+        font-family: AvenirLTStd-Roman;
+        font-weight: 100;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .subtitulo {
+        color: white;
+        font-family: 'AvenirLTStd-Roman';
+        font-size: 2rem;
+    }
+
+    a:hover {
+        color: aqua !important;
+    }
+
+    .acoes {
+        padding-top: 3rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        font-family: AvenirLTStd-Book !important;
+        font-weight: normal !important;
+    }
+
+    .formulario {
+        padding: 2em;
+    }
+
+    input {
+        border-radius: 0.8rem !important;
+    }
+
+    .btn {
+        font-size: 1.5rem !important;
+        font-family: AvenirLTStd-Book !important;
+    }
+
+    .btn-primary {
+        border-radius: 0.8rem !important;
+        width: 13em;
+        background-color: #7018ab !important;
+        padding: 10px 15px !important;
+    }
+
+    .lista-item {
+        font-family: AvenirLTStd-Roman;
+        font-size: 1.5rem;
+        border-bottom: 2px solid rgba(96,220,140,1);
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+    }
+
+    .lista-item2 {
+        font-family: AvenirLTStd-Roman;
+        font-size: 1.5rem;
+        color: #7018ab;
+        /*position: relative;*/
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: 1px;
+        background-color: #d3d3d3;
+        border-radius: 0.5rem;
+        border: 1px solid #ddd;
+    }
+
+
+    .lista-item3 {
+        font-family: AvenirLTStd-Roman;
+        font-size: 1.2rem;
+        color: #7018ab;
+        /*position: relative;*/
+        padding-left:10px;
+        margin-bottom:5px;
+        background-color: #d3d3d3;
+        border-radius: 0.7rem;
+        border: 1px solid #ddd;
+    }
+
+
+
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+</head>
+<body>
+
+
+    <!-- Modal -->
+    <div style="opacity: 0.90" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="lista-item">Profissional de Limpeza <input name="tipo" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Técnico de informatica <input name="tipo" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Freteiro e montador de imóveis <input name="tipo" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Tecnico Hidráulico <input name="tipo" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Pintor <input name="tipo" style="float:right;padding-top:1%" type="radio"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar!</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="opacity: 0.8" class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="lista-item">Água sanitária <input name="item1" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Cloro <input name="item2" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Sabão líquido <input name="item3" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Limpa Vidros <input name="item4" style="float:right;padding-top:1%" type="radio"></li>
+                        <li class="lista-item">Lustra-móveis <input name="item5" style="float:right;padding-top:1%" type="radio"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar!</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-center">
+            <center>
+                <h1 class="titulo">Muito Bom!</h1>
+                <p class="subtitulo">Agora só falta<br /> entendermos seu tipo<br />de negócio.
+            </center>
+            <br />
+            <form style="height:60%">
+                <center>
+                    @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="align-self : center;width : 100%">Qual tipo de serviço você presta? <i style="float:right;padding-top:2px" class="fa fa-chevron-right" aria-hidden="true"></i></button>*@
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="align-self : center;width : 100%">Qual tipo de serviço você presta? <i style="float:right;padding-top:2px" class="fa fa-check" aria-hidden="true"></i></button>
+                </center>
+                <br />
+                <ul class="list-group">
+                    <li class="lista-item2">Profissional de Limpeza <a style="float:right;" href="#">X</a></li>
+                </ul>
+                <center>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" style="align-self : center;width : 100%">Quais produtos você precisa? <i style="float:right;padding-top:2px" class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </center>
+                <br />
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="lista-item3">Água sanitária <a style="float:right;padding-right:1em" href="#">x</a></div>
+                        <div class="lista-item3">Sabão líquido <a style="float:right;padding-right:1em" href="#">x</a></div>
+                        <div class="lista-item3">Lutra-móveis <a style="float:right;padding-right:1em" href="#">x</a></div>
+
+                        @*<ul class="list-group" style="border:1px solid red">
+                    <li class="lista-item3">Profissional de Limpeza <a style="padding-left:1em" href="#">x</a></li>
+                    <li class="lista-item3">Profissional de Limpeza <a style="padding-left:1em" href="#">x</a></li>
+                </ul>*@
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="lista-item3">Cloro <a style="float:right;padding-right:1em" href="#">x</a></div>
+                    </div>
+                </div>
+
+                <div style="width:100%;position:absolute;bottom:5%;right:1%">
+                    <center>
+                        <a href="~/Home/FinalizadoScreem" class="btn btn-primary">Continuar <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </center>
+                </div>
+            </form>
+        </div>
+      
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script type="text/javascript">
+
+    $("input[name='tipo']").change((e) => {
+        console.log('ok');
+    });
+
+</script>

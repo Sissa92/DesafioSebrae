@@ -1,0 +1,127 @@
+﻿<style>
+    @@font-face {
+        font-family: AvenirLTStd-Book;
+        src: url('../../fonts/AvenirLTStd-Book.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Medium;
+        src: url('../../fonts/AvenirLTStd-Medium.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Roman;
+        src: url('../../fonts/AvenirLTStd-Roman.otf') format('opentype');
+    }
+
+    .titulo {
+        padding-top: 10%;
+        font-family: AvenirLTStd-Roman;
+        font-weight: 100;
+        font-size: 2.5rem;
+        color: #5dda8d;
+    }
+
+    .textoicones {
+        text-align: center;
+        font-family: AvenirLTStd-Roman;
+        
+        font-size: 1.6rem;
+        color: #06aaa8;
+    }
+
+    .subtitulo {
+        color: #5dda8d;
+        font-family: 'AvenirLTStd-Roman';
+        font-size: 2rem;
+    }
+
+    .navbar-toggle {
+        float: left !important;
+        border: 0 !important;
+    }
+
+        .navbar-toggle:hover {
+            background-color: aqua !important;
+        }
+
+        .navbar-toggle:focus {
+            background-color: aqua !important;
+        }
+    .navbar-default {
+        background-color: #5dda8d !important;
+        border-color: white !important;
+    }
+
+    .icon-bar{
+        background-color : white !important;
+    }
+
+    .navbar-nav a{
+        color:white !important;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+</head>
+<body>
+    <img src="~/Content/Images/curso_icon.png" style="position:absolute;z-index:5;top:10px" width="50" />
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+
+                @*@Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Lista de Forncedores", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Dicas de Negócio", "About", "Home")</li>
+                    <li>@Html.ActionLink("Indicações de Curso", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="padding-top:50px">
+        <div style="padding-top:5em;">
+            <p class="titulo">Olá João,</p>
+            <p class="subtitulo">o que você deseja fazer hoje?</p>
+        </div>
+    </div>
+    <div width="100%" style="padding-top:2em">
+        <div class="row justify-content-around">
+            <div class="col-xs-3 col-md-3" style="margin-left:7%">
+                <center style="">
+                    <img src="~/Content/Images/lista_for_icon.png" width="45" />
+                    <p class="textoicones">Lista<br /> de fornecedores</p>
+                </center>
+            </div>
+            <div class="col-xs-3 col-md-3" style="margin-left:5%">
+                <center>
+                    <img src="~/Content/Images/negocio_icon.png" width="45" />
+                    <p class="textoicones">Dicas<br /> de negócio</p>
+                </center>
+            </div>
+            <div class="col-xs-3 col-md-3" style="margin-left:5%">
+                <center>
+                    <img src="~/Content/Images/curso_icon.png" width="45" />
+                    <p class="textoicones">Indicações<br /> de curso</p>
+                </center>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+

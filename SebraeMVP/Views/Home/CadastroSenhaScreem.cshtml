@@ -1,0 +1,112 @@
+﻿<style>
+
+    @@font-face {
+        font-family: AvenirLTStd-Book;
+        src: url('../../fonts/AvenirLTStd-Book.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Medium;
+        src: url('../../fonts/AvenirLTStd-Medium.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Roman;
+        src: url('../../fonts/AvenirLTStd-Roman.otf') format('opentype');
+    }
+
+    body {
+        background: rgb(6,170,169);
+        background: linear-gradient(330deg, rgba(6,170,169,1) 0%, rgba(96,220,140,1) 100%);
+    }
+
+    .form-center {
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .titulo {
+        padding-top: 10%;
+        font-family: AvenirLTStd-Roman;
+        font-weight: 100;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .subtitulo {
+        color: white;
+        font-family: 'AvenirLTStd-Roman';
+        font-size: 2rem;
+    }
+
+    a:hover {
+        color: aqua !important;
+    }
+
+    .acoes {
+        padding-top: 3rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        font-family: AvenirLTStd-Book !important;
+        font-weight: normal !important;
+    }
+
+    .formulario {
+        padding: 2em;
+    }
+
+    input {
+        border-radius: 0.8rem !important;
+    }
+
+    .btn {
+        font-size: 1.5rem !important;
+        font-family: AvenirLTStd-Book !important;
+    }
+
+    .btn-primary {
+        border-radius: 0.8rem !important;
+        width: 13em;
+        background-color: #7018ab !important;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <center>
+                <p class="titulo">Ótimo!<br />Vamos criar<br />um login e senha<br />para você.</p>
+            </center>
+
+            <form class="formulario">
+                <div class="form-group">
+                    <label style="color: white">Login.</label>
+                    <input class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label style="color: white">Senha</label>
+                    <input class="form-control" />
+                </div>
+
+                <br />
+                <center>
+                    <a class="btn btn-primary" href="~/Home/ServicoScreem" style="align-self : center">Salvar </a>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+

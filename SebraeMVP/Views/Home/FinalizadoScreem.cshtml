@@ -1,0 +1,122 @@
+﻿<style>
+
+    @@font-face {
+        font-family: AvenirLTStd-Book;
+        src: url('../../fonts/AvenirLTStd-Book.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Medium;
+        src: url('../../fonts/AvenirLTStd-Medium.otf') format('opentype');
+    }
+
+    @@font-face {
+        font-family: AvenirLTStd-Roman;
+        src: url('../../fonts/AvenirLTStd-Roman.otf') format('opentype');
+    }
+
+
+    .form-center {
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .titulo {
+        padding-top: 8%;
+        color: #5bd98d;
+        font-family: 'AvenirLTStd-Medium';
+        font-weight: 100;
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        color: #5bd98d;
+        font-family: 'AvenirLTStd-Roman';
+        font-size: 2.3rem;
+    }
+
+    a:hover {
+        color: aqua !important;
+    }
+
+    .acoes {
+        padding-top: 3rem;
+    }
+
+    .textoicones {
+        text-align:center;
+        font-family: AvenirLTStd-Roman;
+        font-size:1.6rem;
+        color: #06aaa8;
+    }
+
+    .btn {
+        font-size: 2.5rem !important;
+        font-family: AvenirLTStd-Roman !important;
+    }
+
+    .btn-primary {
+        align-content:flex-end;
+        border-radius: 0.8rem !important;
+        width: 10em;
+        background-color: #06aaa8 !important;
+    }
+</style>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+</head>
+
+<body>
+
+    <form class="form-center">
+        <center>
+            <h1 class="titulo">Nome, </h1>
+            <p class="subtitulo">estamos felizes em ter<br />você por aqui.<br /> <br /> Aqui você encontrará:</p>
+        </center>
+        <div class="acoes">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <center>
+                        <img src="~/Content/Images/lista_for_icon.png" width="45" />
+                        <p class="textoicones">Lista de<br /> fornecedores<br /> atualizada</p>
+                    </center>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <center>
+                        <img src="~/Content/Images/curso_icon.png" width="45" />
+                        <p class="textoicones">Indicações<br /> de cursos</p>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <center>
+                    <img src="~/Content/Images/negocio_icon.png"  width="45"/>
+                    <p class="textoicones">Dicas<br /> de negócio</p>
+                </center>
+            </div>
+            <p class="textoicones">
+                Para ter acesso a tudo isso, com <br />segurança, vamos criar seu login e senha?
+            </p>
+        </div>
+        <div class="acoes">
+            <center>
+                <a class="btn btn-primary" href="~/Home/Cdas" >
+                Vamos!<i style="padding-top: 2%;float:right" class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <br /><br />
+                <p><a href="~/Home/HomeScreem" style="color:#8c8c8c;font-family:AvenirLTStd-Roman">Agora não.</a></p>
+            </center>
+        </div>
+    </form>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+
